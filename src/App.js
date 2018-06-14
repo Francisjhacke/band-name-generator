@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { Container } from 'semantic-ui-react'
 import GenerateButton from './components/GenerateButton';
 import AppHeader from './components/AppHeader';
 
