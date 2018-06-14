@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { Container } from 'semantic-ui-react'
 import GenerateButton from './components/GenerateButton';
 import AppHeader from './components/AppHeader';
+
+import {GenerateBandName} from './helpers.js';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, click the <strong>Generate</strong> button.<br/>
           <GenerateButton/>
+          <span>{GenerateBandName()}</span>
         </p>
       </Container>
     );
