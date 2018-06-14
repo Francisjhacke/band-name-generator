@@ -1,6 +1,9 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import Button from '@material-ui/core/Button';
 
-const GenerateButton = () => <Button class="ui button" role="button">Generate</Button>
+const GenerateButton = () => 
+    <Button variant="contained" color="primary">
+        Generate
+    </Button>
 
 export default GenerateButton;
