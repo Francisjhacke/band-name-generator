@@ -26,8 +26,8 @@ class App extends Component {
             </Typography>
             <Typography component="p">
               <span>Click the 'Generate' Button below to generate your random band name!</span><br/>
-              <RandomBandNameContainer/>
             </Typography>
+            <RandomBandNameContainer/>
           </CardContent>
         </Card>
       </div>

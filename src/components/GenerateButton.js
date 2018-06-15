@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-const GenerateButton = () => 
-    <Button variant="contained" color="primary">
+const GenerateButton = props => 
+    <Button onClick={props.handleClick} variant="contained" color="primary">
         Generate
     </Button>
 
