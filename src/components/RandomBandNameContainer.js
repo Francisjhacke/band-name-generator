@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import GenerateButton from './GenerateButton';
 import {GenerateBandName} from '../helpers.js';
 import RandomBandNameField from './RandomBandNameField';
+import './mainStyles.css';
 
 class RandomBandNameContainer extends Component{
     constructor() {
@@ -19,7 +20,7 @@ class RandomBandNameContainer extends Component{
     }
     render() {
       return (
-          <div>
+          <div className="generateContainer">
             <GenerateButton handleClick={this.handleClick}/>
             <RandomBandNameField bandName={this.state.bandName}/>
           </div>

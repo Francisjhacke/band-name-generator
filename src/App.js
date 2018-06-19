@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 // https://www.datamuse.com/api/ --- API FOR GETTING RANDOM WORDS
 
 import Card from '@material-ui/core/Card';
@@ -12,16 +13,21 @@ import Typography from '@material-ui/core/Typography';
 import RandomBandNameContainer from './components/RandomBandNameContainer';
 
 const cardStyle = {
-  textAlign : 'center'
+  textAlign : 'center',
+  height: '100%',
+  marginTop: 40,
+  marginBottom: 40,
+  marginLeft: 40,
+  marginRight: 40
 }
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={cardStyle}>
         <Card style={cardStyle}>
           <CardContent>
-            <Typography variant="headline" component="h2">
+            <Typography variant="headline" component="h1">
               Random Band Name Generator
             </Typography>
             <Typography component="p">
