@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 // https://www.datamuse.com/api/ --- API FOR GETTING RANDOM WORDS
 
 import Card from '@material-ui/core/Card';
@@ -27,7 +26,7 @@ class App extends Component {
       <div style={cardStyle}>
         <Card style={cardStyle}>
           <CardContent>
-            <Typography variant="headline" component="h1">
+            <Typography variant="headline" component="h1" style={{fontSize:60}}>
               Random Band Name Generator
             </Typography>
             <Typography component="p">
